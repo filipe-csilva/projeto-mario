@@ -1,0 +1,14 @@
+/* CSS Document */
+
+body {
+	font-family: 'Poppins';
+}
+
+.cabecalho {
+	background-color: blue;
+}
+
+.cabecalho .logo {
+	width: 30px;
+	height: 30px;
+}
