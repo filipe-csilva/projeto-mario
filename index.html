@@ -4,10 +4,17 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="width=device-width, initial-scale=1.0">
-		<
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
 		<title>Document</title>
 	</head>
 	<body>
+		<div class="fundo-video">
+			<video class="video" autoplay loop muted>
+				<source src="src/video/video-mario.mp4" type="video/mp4">
+			</video>
+		</div>
 		<header class="cabecalho">
 			<a><img src="src/imagens/logo-chapeu-mario.png" alt="logo chapeu Mario"></a>
 			<nav>
@@ -19,11 +26,11 @@
 		</header>
 		<main class="container">
 			<div class="informacoes">
-				<img src="src/imagens/titulo.png" alt="imagem do titulo">
-				<p></p>
-				<button>Veja o trailer</button>
+				<img class="imagem-tutilo" src="src/imagens/titulo.png" alt="imagem do titulo">
+				<p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
+				<button class="botao-trailer">Veja o trailer</button>
 			</div>
-			<img class="mario" src="src/imagens/super-mario-chars.png">
+			<img class="mario" src="src/imagens/super-mario-chars.png" alt="imagem do mario">
 		</main>
 	</body>
 </html>
