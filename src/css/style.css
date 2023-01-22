@@ -60,6 +60,7 @@ body {
 	color: #ffffff;
 	padding: 15px;
 	font-size: 18px;
+	font-weight: bold;
 	cursor: pointer;
 	border: none;
 	text-transform: uppercase;
@@ -71,12 +72,13 @@ body {
 }
 
 .fundo-video {
-	background-color: red;
 	position: absolute;
 	z-index: -1;
-	width: 200vw;
+	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .fundo-video .video {
@@ -86,7 +88,6 @@ body {
 
 .fundo-video::after {
 	content: "";
-	background-color: #d5011d;
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
@@ -102,6 +103,8 @@ body {
 	top: 0;
 	left: 0;
 	background-color: rgba(52, 52, 50, 0.749)
+	opacity: 0;
+	visibility: hidden;
 }
 
 .conteudo-modal {
@@ -129,4 +132,9 @@ body {
 	border-width: 0;
 	width: 640px;
 	height: 360px;
+}
+
+.modal.aberto {
+	opacity: 1;
+	visibility: visible;
 }
