@@ -6,9 +6,14 @@ const video = document.getElementById("video");
 
 const linkDoVideo = video.src;
 
-botaoTrailer.addEventListener("click", () => {
+function aternarModal(){
 	modal.classList.add("aberto");
-	video.setAttribute("src", linkDoVideo)
+}
+
+botaoTrailer.addEventListener("click", () => {
+	aternarModal();
+	if(video.src === "")
+		video.setAttribute("src", linkDoVideo)
 })
 
 const modal = document.querySelector(".modal");
@@ -16,6 +21,6 @@ const modal = document.querySelector(".modal");
 const botaoFecharModal = document.querySelector(".fechar-modal");
 
 botaoFecharModal.addEventListener("click", () => {
-	modal.classList.remove("aberto");
+	aternarModal();
 	video.setAttribute("src", "");
 })
